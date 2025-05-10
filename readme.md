@@ -69,13 +69,3 @@ FROM stock_data
 WHERE ts > NOW() - INTERVAL '1' DAY 
 GROUP BY symbol;
 
-kafka-stock/
-├── producer/            # Kafka producer & data simulator
-│   ├── simulator.py     # Stock market data generator
-│   └── utils.py         # Helper functions
-├── consumer/            # Kafka consumer
-|   └── consumer.ipynb   # Data ingestion            
-├── requirements.txt     # Python dependencies
-└── README.md            # You are here! 😊
-=======
->>>>>>> f0b16a72b2b7c545b751fe61ce3f415b44de667c

@@ -1,0 +1,9 @@
+Prerequisites:
+
+AWS Account (EC2, Glue, Athena access)
+
+Python 3.8+
+
+Kafka (installed on EC2)
+
+PostgreSQL (for storage)

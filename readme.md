@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 📈 Kafka Stock Market Data Pipeline on AWS ☁️
 Real-time stock market data simulation, streaming with Kafka, and analysis with AWS Glue & Athena
 
@@ -14,6 +15,8 @@ PostgreSQL
 ✔ Amazon Athena for SQL-based analytics
 
 ```mermaid
+=======
+>>>>>>> f0b16a72b2b7c545b751fe61ce3f415b44de667c
 flowchart LR
     A[Python Data Simulator] -->|Feeds| B[Kafka Producer]
     B -->|Publishes| C[(Kafka Cluster\nAWS EC2)]
@@ -21,6 +24,7 @@ flowchart LR
     D -->|Stores in| E[(PostgreSQL DB)]
     E -->|Crawled by| F[AWS Glue]
     F -->|Query via| G[Amazon Athena]
+<<<<<<< HEAD
 ```
     
     
@@ -73,3 +77,5 @@ kafka-stock/
 |   └── consumer.ipynb   # Data ingestion            
 ├── requirements.txt     # Python dependencies
 └── README.md            # You are here! 😊
+=======
+>>>>>>> f0b16a72b2b7c545b751fe61ce3f415b44de667c

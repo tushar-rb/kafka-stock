@@ -1,0 +1,22 @@
+ssh -i "kafka-project.pem" ec2-user@XX.XX.XXX.ap-south-1.compute.amazonaws.com
+cd kafka_2.12-3.8.0
+Create the topic:
+-----------------------------
+Duplicate the session & enter in a new console --
+cd kafka_2.12-3.8.0
+bin/kafka-topics.sh --create --topic demo_test --bootstrap-server 13.234.31.4:9092 --replication-factor 1 --partitions 1
+
+Start Producer:
+--------------------------
+bin/kafka-console-producer.sh --topic demo_test --bootstrap-server 13.234.31.4:9092
+
+Start Consumer:
+-------------------------
+Duplicate the session & enter in a new console --
+bin/kafka-console-consumer.sh --topic demo_test --bootstrap-server 13.234.31.4:9092
+
+# Find the process ID (PID) using port 2181
+sudo lsof -i :2181
+
+# Kill the process (replace 1234 with the actual PID from above)
+sudo kill -9 1234

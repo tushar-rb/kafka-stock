@@ -1,6 +1,6 @@
 
 # 📈 Kafka Stock Market Data Pipeline on AWS ☁️
-##Real-time stock market data simulation, streaming with Kafka, and analysis with AWS Glue & Athena
+## Real-time stock market data simulation, streaming with Kafka, and analysis with AWS Glue & Athena
 
 AWS
 Kafka

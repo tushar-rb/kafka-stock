@@ -16,6 +16,8 @@ PostgreSQL
 
 ## 📊 Data Flow Architecture
 
+## 📊 Data Flow Architecture
+
 ```mermaid
 flowchart LR
     A[Python Data Simulator] -->|Feeds| B[Kafka Producer]
@@ -24,7 +26,7 @@ flowchart LR
     D -->|Stores in| E[(PostgreSQL DB)]
     E -->|Crawled by| F[AWS Glue]
     F -->|Query via| G[Amazon Athena]
-    
+````
     
 🚀 Quick Setup
 
